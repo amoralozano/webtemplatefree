@@ -1,0 +1,41 @@
+---
+import webimage3 from "../../images/webimage3.png"
+import avatar1 from "../../images/avatar1.png"
+import { Image } from 'astro:assets';
+---
+
+
+<div class="w-full h-[800px] mt-[100px]">
+    <h1 class="text-left ml-[50px] text-[85px] font-bold md:w-[55%] mt-[50px]">Make & Use Your Own AI</h1>
+    <div class="w-full h-[450px]  md:mt-[20px] flex items-center justify-center">
+        <div class="h-full w-full md:w-[40%] flex items-center justify-center">
+            
+            <Image src={webimage3} alt="AI Assistant image" class="w-[80%] h-[80%]" />
+        </div>
+        <div class="h-full w-full md:w-[60%]">
+            <h1 class="text-left ml-[60px] text-[45px] font-bold mt-[50px]">Cozy Kitty Helper</h1>
+            <div class="w-[60%] h-[100px] ml-[30px] flex items-center justify-center mt-[40px]">
+                <div class="w-[50%] h-full ml-[-50px]">
+                    <h1 class="text-center ml-[0px] text-[28px] font-bold mt-[0px]">Top Trait</h1>
+                    <h1 class="text-center ml-[0px] text-[20px] font-bold mt-[0px] text-[#F2AFEF]">Singing</h1>
+                </div>
+                <div class="w-[50%] h-full">
+                    <h1 class="text-center ml-[0px] text-[28px] font-bold mt-[0px]">Created On</h1>
+                    <h1 class="text-center ml-[0px] text-[20px] font-bold mt-[0px] text-[#7360DF]">Jan 03, 2024</h1>
+                </div>
+            </div>
+            <div class="w-[60%] h-[100px] flex items-center justify-center mt-[20px] ml-[50px]">
+                <div class="w-[30%] h-full ml-[-50px] flex items-center justify-center">
+                    <Image src={avatar1} alt="user profile image" class="w-[70px] h-[70px] bg-pink-400 rounded-full"/>
+                </div>
+                <div class="w-[40%] h-full">
+                    <h1 class="text-left ml-[0px] text-[28px] font-bold mt-[10px]">Evan Dosey</h1>
+                    <h1 class="text-left ml-[0px] text-[18px] font-light mt-[0px] text-[#F2AFEF]">@evandosey12</h1>
+                </div>
+                <div class="w-[30%] h-full ml-[0px] flex items-center justify-center">
+                  <button class="w-[90%] h-[40px] bg-white text-black rounded-full">Follow</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+
+---
+import logo15 from "../../images/logo15.png"
+import { Image } from 'astro:assets';
+---
+
+<nav class=" shadow mb-10 mt-[20px]">
+    <div x-data="{isOpen: false}" class="max-w-3xl mx-auto py-3 px-6 md:px-0 md:flex md:justify-between md:items-center">
+        <div class="md:flex md:justify-between md:items-center">
+            <div class="flex items-center">
+                <Image src={logo15} class="h-8 shadow rounded-full" alt="" />
+                <a href="#" class="text-white text-[28px] hover:text-[#F2AFEF] ml-4 md:ml-[-200px] font-bold">Imagine AI</a>
+            </div>
+            <!-- mobile menu button -->
+            <div class="flex md:hidden">
+                <button
+                type="button"
+                class="text-gray-500 hover:text-gray-600 focus:outline-none mt-[-30px] lg:mt-0 ml-[320px] lg:ml-0 focus:text-gray-600"
+                aria-label="toggle menu"
+                @click="isOpen = !isOpen"
+                >
+                <div class="h-6 w-6 bg-red-200"></div>
+                </button>
+            </div>
+
+            <!-- menu if mobile is set to hidden -->
+            <div :class="isOpen ? 'show' : 'hidden'" class="md:flex items-center mt-4">
+                <div class="flex flex-col mt-0 md:mt-[-15px] md:flex-row ml-6 md:ml-6">
+                    <a class="my-1 text-[16px] text-white font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">Home</a>
+                    <a class="my-1 text-[16px] text-white font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">Shop</a>
+                    <a class="my-1 text-[16px] text-white font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">About</a>
+                    <a class="my-1 text-[16px] text-white font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">Contact</a>
+                </div>
+
+                <div class="flex flex-col mt-0 md:mt-[-15px] md:flex-row ml-6 md:ml-[500px]">
+                    <button class="w-[120px] h-[35px] border-2 border-[#7360DF] rounded-full text-white text-[15px]">Try Free</button>
+                </div>
+                <div class="flex flex-col mt-0 md:mt-[-15px] md:flex-row ml-6 md:ml-[30px]">
+                    <button class="w-[120px] h-[35px] bg-[#7360DF] rounded-full text-white text-[15px] shadow-md shadow-[#7360DF]">Sign in</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</nav>

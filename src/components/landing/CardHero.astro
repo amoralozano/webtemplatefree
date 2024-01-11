@@ -1,0 +1,27 @@
+---
+import icon2 from "../../images/icon2.png"
+import icon3 from "../../images/icon3.png"
+import { Image } from 'astro:assets';
+---
+
+<div class="w-full md:w-[70%]   mt-[30px] md:mt-[70px] md:ml-[0px] flex items-center justify-center">
+  <div class="w-full h-[50%] md:w-[50%] md:h-full ">
+    <div class="w-[80%] h-[60px]  mt-[30px] ml-[50px] flex items-start justify-start">
+        <div class="w-[60px] h-[60px] bg-[#33186B] rounded-full ml-[5px] flex items-center justify-center">
+            <Image src={icon2} alt="AI Image" class="w-[90%] h-[90%]" />
+        </div>
+        <h1 class="text-left text-[20px] font-bold text-white ml-[10px] mt-[15px]">Personal AI</h1>
+    </div>
+    <p class="text-left ml-[50px] text-[18px] font-normal w-[75%] mt-[20px]">The only app in the market where it helps you communicate quick and easy trough an app at work. </p>
+    </div>  
+  <div class="w-full h-[50%] md:w-[50%] md:h-full ">
+    <div class="w-[80%] h-[60px] mt-[30px] ml-[50px] flex items-start justify-start">
+        <div class="w-[60px] h-[60px] bg-[#33186B] rounded-full ml-[5px] lex items-center justify-center">
+            <Image src={icon3} alt="cloud image with an x" class="w-[90%] h-[90%]" />
+        </div>
+        <h1 class="text-left text-[20px] font-bold text-white ml-[10px] mt-[15px]">Works Offline</h1>
+    </div>
+    <p class="text-left ml-[50px] text-[18px] font-normal w-[75%] mt-[20px]">The only app in the market where it helps you communicate quick and easy trough an app at work. </p> 
+
+   </div>  
+</div>

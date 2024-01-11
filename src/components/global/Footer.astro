@@ -1,0 +1,57 @@
+---
+import socialicon1 from "../../images/socialicon1.png"
+import socialicon2 from "../../images/socialicon2.png"
+import socialicon3 from "../../images/socialicon3.png"
+import socialicon4 from "../../images/socialicon4.png"
+import { Image } from 'astro:assets';
+---
+
+<div class="w-[80%] h-[500px] ml-[10%] mt-[150px] border-2 border-[#b883f1] rounded-lg">
+    <div class="w-full h-[80%] bg-[#C499F3] flex items-center justify-center">
+        <div class="w-[55%] h-full text-left text-[70px] font-bold">
+            <h1 class="ml-[80px] mt-[80px] w-[70%]">Join Our Community</h1>
+        </div>
+        <div class="w-[45%] h-full flex items-center justify-center">
+            <div class="w-[90%] h-[90%]">
+                <div class="w-full h-[30%] mt-[50px] flex items-center justify-center">
+                    <div class="w-[50%] h-full  flex items-center justify-center">
+                        <div class="w-[90px] h-[90px] rounded-full bg-black flex items-center justify-center">
+                            <Image src={socialicon1} alt="X icon" class="w-[80%] h-[70%]" />
+                        </div>
+                        
+                    </div>
+                    <div class="w-[50%] h-full flex items-center justify-center">
+                        <div class="w-[90px] h-[90px] rounded-full bg-black flex items-center justify-center">
+                            <Image src={socialicon2} alt="X icon" class="w-[80%] h-[80%]" />
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full h-[30%] mt-[20px] flex items-center justify-center">
+                    <div class="w-[50%] h-full  flex items-center justify-center">
+                        <div class="w-[90px] h-[90px] rounded-full bg-black flex items-center justify-center">
+                            <Image src={socialicon3} alt="X icon" class="w-[70%] h-[70%]" />
+                        </div>
+                    </div>
+                    <div class="w-[50%] h-full flex items-center justify-center">
+                        <div class="w-[90px] h-[90px] rounded-full bg-black flex items-center justify-center">
+                            <Image src={socialicon4} alt="X icon" class="w-[80%] h-[70%]" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full h-[20%] bg-[#C499F3] flex items-center justify-center">
+        <div class="w-[33%] h-full flex items-center justify-center">
+            <h1 class="text-[20px] font-light text-black">Home<h1>
+                <h1 class="text-[20px] font-light text-black ml-[30px]">AI Library<h1>
+        </div>
+        <div class="w-[33%] h-full  flex items-center justify-center">
+            <h1 class="text-[25px] font-bold text-black">Imagine AI<h1>
+        </div>
+        <div class="w-[33%] h-full flex items-center justify-center ">
+            <h1 class="text-[20px] font-light text-black">About Us<h1>
+                <h1 class="text-[20px] font-light text-black ml-[30px]">Shop AI<h1>
+        </div>
+    </div>
+</div>
