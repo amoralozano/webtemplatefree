@@ -5,13 +5,17 @@ import webimage4 from "../../images/webimage4.png"
 import webimage5 from "../../images/webimage5.png"
 import webimage6 from "../../images/webimage6.png"
 import { Image } from 'astro:assets';
+import '@fontsource/kanit/600.css';
+import '@fontsource-variable/quicksand';
+
 
 ---
 
-<div class="w-full h-[600px] mt-[100px]">
+<div class="w-[120%] md:w-full h-[600px] md:h-[600px] mt-[100px] ml-[5px] md:ml-0 bg-green-100">
     <h1 class="text-center text-[58px] font-bold text-white">Trending AI's Of the Week</h1>
-    <div class="w-full md:flex md:items-center md:justify-center mt-[80px]">
-    <div class="w-[30%] h-[400px] glasscard rounded-tr-[200px] rounded-tl-[200px] rounded-br-[20px] rounded-bl-[20px]">
+    <div class="w-full bg-yellow-200 flex overflow-auto md:items-center md:justify-center md:mt-[80px]">
+
+    <div class="w-[400px] md:w-[30%] h-[300px] md:h-[400px] glasscard rounded-tr-[200px] rounded-tl-[200px] rounded-br-[20px] rounded-bl-[20px]">
         <div class="w-[90%] h-[250px] bg-gray-600 rounded-tr-[200px] rounded-tl-[200px] ml-[20px] mt-[20px] flex items-center justify-center">
             <Image src={webimage4} alt="money sign" class="w-[250px] h-[250px]" >
             <!-- image here -->
@@ -24,12 +28,14 @@ import { Image } from 'astro:assets';
             </div>
             <div class="w-[25%] h-[60px] ml-[-30px] flex items-center justify-center">
                 <Image src={icon1} alt="money sign" class="w-[30px] h-[30px] "/>
-                <h1 class="text-[17px] ml-[0px] font-bold text-white">5.99</h1>
+                <h2 class="text-[17px] ml-[0px] font-normal text-white">5.99</h2>
             </div>
         </div>
 
     </div>
-    <div class="w-[30%] h-[400px] glasscard rounded-tr-[200px] rounded-tl-[200px] rounded-br-[20px] rounded-bl-[20px] ml-[30px]">
+
+
+    <div class="w-[400px] md:w-[30%] h-[400px] glasscard rounded-tr-[200px] rounded-tl-[200px] rounded-br-[20px] rounded-bl-[20px] ml-[30px]">
         <div class="w-[90%] h-[250px] bg-pink-300 rounded-tr-[200px] rounded-tl-[200px] ml-[20px] mt-[20px] flex items-center justify-center">
             <Image src={webimage5} alt="money sign" class="w-[250px] h-[250px]" >
             <!-- image here -->
@@ -42,11 +48,11 @@ import { Image } from 'astro:assets';
             </div>
             <div class="w-[25%] h-[60px] ml-[-30px] flex items-center justify-center">
                 <Image src={icon1} alt="money sign" class="w-[30px] h-[30px] "/>
-                <h1 class="text-[17px] ml-[0px] font-bold text-white">10.99</h1>
+                <h2 class="text-[17px] ml-[0px] font-normal text-white">10.99</h1>
             </div>
         </div>
     </div>
-    <div class="w-[30%] h-[400px] glasscard rounded-tr-[200px] rounded-tl-[200px] rounded-br-[20px] rounded-bl-[20px] ml-[30px]">
+    <div class="w-[400px] md:w-[30%] h-[400px] glasscard rounded-tr-[200px] rounded-tl-[200px] rounded-br-[20px] rounded-bl-[20px] ml-[30px]">
         <div class="w-[90%] h-[250px] bg-blue-300 rounded-tr-[200px] rounded-tl-[200px] ml-[20px] mt-[20px] flex items-center justify-center">
             <Image src={webimage6} alt="money sign" class="w-[250px] h-[250px]" >
             <!-- image here -->
@@ -59,7 +65,7 @@ import { Image } from 'astro:assets';
             </div>
             <div class="w-[25%] h-[60px] ml-[-30px] flex items-center justify-center">
                 <Image src={icon1} alt="money sign" class="w-[30px] h-[30px] "/>
-                <h1 class="text-[17px] ml-[0px] font-bold text-white">5.99</h1>
+                <h2 class="text-[17px] ml-[0px] font-normal text-white">5.99</h2>
             </div>
         </div>
     </div>
@@ -68,7 +74,7 @@ import { Image } from 'astro:assets';
 
 
 <style>
-    .glasscard {
+.glasscard {
   background-color: #fff;
   color: black;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -76,4 +82,14 @@ import { Image } from 'astro:assets';
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
 }
+
+    h1 {
+       font-family: "Kanit", sans-serif;
+    }
+
+    p {
+        font-family: 'Quicksand Variable', sans-serif;
+    }
+    
+
 </style>

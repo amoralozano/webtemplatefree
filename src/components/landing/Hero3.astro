@@ -2,35 +2,39 @@
 import webimage3 from "../../images/webimage3.png"
 import avatar1 from "../../images/avatar1.png"
 import { Image } from 'astro:assets';
+import '@fontsource/kanit/600.css';
+import '@fontsource-variable/quicksand';
 ---
 
 
-<div class="w-full h-[800px] mt-[100px]">
-    <h1 class="text-left ml-[50px] text-[85px] font-bold md:w-[55%] mt-[50px]">Make & Use Your Own AI</h1>
-    <div class="w-full h-[450px]  md:mt-[20px] flex items-center justify-center">
+<div class="w-full h-[850px] md:h-[800px] mt-[-100px] md:mt-[100px] ml-[30px] md:ml-0">
+    <h1 class="text-left ml-[30px] md:ml-[50px] text-[65px] md:text-[95px] md:w-[55%] mt-[50px]">Make & Use Your Own AI</h1>
+    <div class="w-full h-[450px]  md:mt-[20px] md:flex md:items-center md:justify-center">
         <div class="h-full w-full md:w-[40%] flex items-center justify-center">
             
-            <Image src={webimage3} alt="AI Assistant image" class="w-[80%] h-[80%]" />
+            <Image src={webimage3} alt="AI Assistant image" class="w-[70%] h-[70%] md:w-[80%] md:h-[80%] ml-[-20px] md:ml-[250px]" />
+            <h1 class="visible md:invisible text-left md:ml-[60px] text-[45px] font-bold  md:mt-[50px]">Cozy Kitty Helper</h1>
+            <!-- continue off here make the div above this one flex for only MD screens to get the mobile working -->
         </div>
         <div class="h-full w-full md:w-[60%]">
-            <h1 class="text-left ml-[60px] text-[45px] font-bold mt-[50px]">Cozy Kitty Helper</h1>
-            <div class="w-[60%] h-[100px] ml-[30px] flex items-center justify-center mt-[40px]">
+            <h1 class="invisible md:visible text-left ml-[60px] text-[45px] font-bold mt-[50px]">Cozy Kitty Helper</h1>
+            <div class="w-[80%] md:w-[60%] h-[80px] md:h-[100px] ml-[60px] md:ml-[30px] flex items-center justify-center mt-[-100px] md:mt-[40px] ">
                 <div class="w-[50%] h-full ml-[-50px]">
                     <h1 class="text-center ml-[0px] text-[28px] font-bold mt-[0px]">Top Trait</h1>
-                    <h1 class="text-center ml-[0px] text-[20px] font-bold mt-[0px] text-[#F2AFEF]">Singing</h1>
+                    <p class="text-center ml-[0px] text-[20px] font-light mt-[0px] text-[#F2AFEF]">Singing</p>
                 </div>
                 <div class="w-[50%] h-full">
                     <h1 class="text-center ml-[0px] text-[28px] font-bold mt-[0px]">Created On</h1>
-                    <h1 class="text-center ml-[0px] text-[20px] font-bold mt-[0px] text-[#7360DF]">Jan 03, 2024</h1>
+                    <p class="text-center ml-[0px] text-[20px] font-light mt-[0px] text-[#7360DF]">Jan 03, 2024</p>
                 </div>
             </div>
-            <div class="w-[60%] h-[100px] flex items-center justify-center mt-[20px] ml-[50px]">
+            <div class="w-[80%] md:w-[60%] h-[80px] md:h-[100px] flex items-center justify-center mt-[20px] ml-[70px] md:ml-[50px]">
                 <div class="w-[30%] h-full ml-[-50px] flex items-center justify-center">
                     <Image src={avatar1} alt="user profile image" class="w-[70px] h-[70px] bg-pink-400 rounded-full"/>
                 </div>
                 <div class="w-[40%] h-full">
-                    <h1 class="text-left ml-[0px] text-[28px] font-bold mt-[10px]">Evan Dosey</h1>
-                    <h1 class="text-left ml-[0px] text-[18px] font-light mt-[0px] text-[#F2AFEF]">@evandosey12</h1>
+                    <h1 class="text-left ml-[0px] text-[23px] md:text-[28px] font-bold mt-[10px]">Evan Dosey</h1>
+                    <p class="text-left ml-[0px] text-[18px] font-light mt-[0px] text-[#F2AFEF]">@evandosey12</p>
                 </div>
                 <div class="w-[30%] h-full ml-[0px] flex items-center justify-center">
                   <button class="w-[90%] h-[40px] bg-white text-black rounded-full">Follow</button>
@@ -39,3 +43,14 @@ import { Image } from 'astro:assets';
         </div>
     </div>
 </div>
+
+
+<style>
+    h1 {
+       font-family: "Kanit", sans-serif;
+    }
+
+    p {
+        font-family: 'Quicksand Variable', sans-serif;
+    }
+   </style>

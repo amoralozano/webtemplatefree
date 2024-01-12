@@ -4,18 +4,18 @@ import logo15 from "../../images/logo15.png"
 import { Image } from 'astro:assets';
 ---
 
-<nav class=" shadow mb-10 mt-[20px]">
+<nav class=" shadow mb-10 mt-[20px] ml-[35px] w-full md:ml-0">
     <div x-data="{isOpen: false}" class="max-w-3xl mx-auto py-3 px-6 md:px-0 md:flex md:justify-between md:items-center">
         <div class="md:flex md:justify-between md:items-center">
             <div class="flex items-center">
-                <Image src={logo15} class="h-8 shadow rounded-full" alt="" />
-                <a href="#" class="text-white text-[28px] hover:text-[#F2AFEF] ml-4 md:ml-[-200px] font-bold">Imagine AI</a>
+                <Image src={logo15} class="h-[50px] w-[50px] shadow rounded-full" alt="" />
+                <a href="#" class="text-white text-[28px] hover:text-[#F2AFEF] ml-0 md:ml-[-200px] font-bold">Imagine AI</a>
             </div>
             <!-- mobile menu button -->
             <div class="flex md:hidden">
                 <button
                 type="button"
-                class="text-gray-500 hover:text-gray-600 focus:outline-none mt-[-30px] lg:mt-0 ml-[320px] lg:ml-0 focus:text-gray-600"
+                class="text-gray-500 hover:text-gray-600 focus:outline-none mt-[-50px] lg:mt-0 ml-[350px] md:ml-0 focus:text-gray-600"
                 aria-label="toggle menu"
                 @click="isOpen = !isOpen"
                 >

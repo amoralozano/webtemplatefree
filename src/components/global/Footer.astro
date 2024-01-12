@@ -6,34 +6,34 @@ import socialicon4 from "../../images/socialicon4.png"
 import { Image } from 'astro:assets';
 ---
 
-<div class="w-[80%] h-[500px] ml-[10%] mt-[150px] border-2 border-[#b883f1] rounded-lg">
-    <div class="w-full h-[80%] bg-[#C499F3] flex items-center justify-center">
-        <div class="w-[55%] h-full text-left text-[70px] font-bold">
-            <h1 class="ml-[80px] mt-[80px] w-[70%]">Join Our Community</h1>
+<div class=" w-full md:w-[80%] h-[520px] md:h-[500px] ml-[10%] mt-[150px] bg-[#C499F3] rounded-lg">
+    <div class="w-full h-[80%] bg-[#C499F3] md:flex md:items-center md:justify-center rounded-lg">
+        <div class="w-full md:w-[55%] h-[30%] md:h-full text-left text-[45px] md:text-[70px] font-bold">
+            <h1 class="ml-[20px] md:ml-[80px] mt-[20px] md:mt-[80px] md:w-[70%]">Join Our Community</h1>
         </div>
-        <div class="w-[45%] h-full flex items-center justify-center">
-            <div class="w-[90%] h-[90%]">
-                <div class="w-full h-[30%] mt-[50px] flex items-center justify-center">
+        <div class="w-full md:w-[45%] h-[70%] md:h-full flex items-center justify-center">
+            <div class="w-[90%] h-[90%] ml-[0px] mt-[-60px] md:ml-0 md:mt-0">
+                <div class="w-full h-[40%] md:h-[30%] mt-[50px] flex items-center justify-center ">
                     <div class="w-[50%] h-full  flex items-center justify-center">
-                        <div class="w-[90px] h-[90px] rounded-full bg-black flex items-center justify-center">
+                        <div class="w-[70px] h-[70px] md:w-[90px] md:h-[90px] rounded-full bg-black flex items-center justify-center">
                             <Image src={socialicon1} alt="X icon" class="w-[80%] h-[70%]" />
                         </div>
                         
                     </div>
                     <div class="w-[50%] h-full flex items-center justify-center">
-                        <div class="w-[90px] h-[90px] rounded-full bg-black flex items-center justify-center">
+                        <div class="w-[70px] h-[70px] md:w-[90px] md:h-[90px] ml-[-100px] md:ml-0 rounded-full bg-black flex items-center justify-center">
                             <Image src={socialicon2} alt="X icon" class="w-[80%] h-[80%]" />
                         </div>
                     </div>
                 </div>
-                <div class="w-full h-[30%] mt-[20px] flex items-center justify-center">
+                <div class="w-full h-[40%] md:h-[30%] mt-[20px] flex items-centerjustify-center">
                     <div class="w-[50%] h-full  flex items-center justify-center">
-                        <div class="w-[90px] h-[90px] rounded-full bg-black flex items-center justify-center">
+                        <div class="w-[70px] h-[70px] md:w-[90px] md:h-[90px]  rounded-full bg-black flex items-center justify-center">
                             <Image src={socialicon3} alt="X icon" class="w-[70%] h-[70%]" />
                         </div>
                     </div>
                     <div class="w-[50%] h-full flex items-center justify-center">
-                        <div class="w-[90px] h-[90px] rounded-full bg-black flex items-center justify-center">
+                        <div class="w-[70px] h-[70px] md:w-[90px] md:h-[90px] ml-[-100px] md:ml-0 rounded-full bg-black flex items-center justify-center">
                             <Image src={socialicon4} alt="X icon" class="w-[80%] h-[70%]" />
                         </div>
                     </div>
@@ -43,15 +43,15 @@ import { Image } from 'astro:assets';
     </div>
     <div class="w-full h-[20%] bg-[#C499F3] flex items-center justify-center">
         <div class="w-[33%] h-full flex items-center justify-center">
-            <h1 class="text-[20px] font-light text-black">Home<h1>
-                <h1 class="text-[20px] font-light text-black ml-[30px]">AI Library<h1>
+            <h1 class="text-[20px] font-light text-black ml-[50%] md:ml-0">Home<h1>
+                <h1 class="invisible md:visible text-[20px] font-light text-black ml-[30px]">AI Library<h1>
         </div>
         <div class="w-[33%] h-full  flex items-center justify-center">
-            <h1 class="text-[25px] font-bold text-black">Imagine AI<h1>
+            <h1 class=" text-[22px] md:text-[25px] font-bold text-black">Imagine AI<h1>
         </div>
         <div class="w-[33%] h-full flex items-center justify-center ">
-            <h1 class="text-[20px] font-light text-black">About Us<h1>
-                <h1 class="text-[20px] font-light text-black ml-[30px]">Shop AI<h1>
+            <h1 class="invisible md:visible text-[20px] font-light text-black">About Us<h1>
+                <h1 class="text-[20px] font-light text-black ml-[-50%] md:ml-0">Shop AI<h1>
         </div>
     </div>
 </div>
