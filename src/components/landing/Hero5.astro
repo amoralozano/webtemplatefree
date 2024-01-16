@@ -7,71 +7,53 @@ import webimage6 from "../../images/webimage6.png"
 import { Image } from 'astro:assets';
 import '@fontsource/kanit/600.css';
 import '@fontsource-variable/quicksand';
-
+import { products } from "../../data/products.json";
 
 ---
 
-<div class="w-[120%] md:w-full h-[600px] md:h-[600px] mt-[100px] ml-[5px] md:ml-0 bg-green-100">
+<div 
+    class="w-[120%] md:w-full h-[750px] md:h-[550px]  mt-[-80px] md:mt-[100px] ml-[5px] md:ml-0"
+>
     <h1 class="text-center text-[58px] font-bold text-white">Trending AI's Of the Week</h1>
-    <div class="w-full bg-yellow-200 flex overflow-auto md:items-center md:justify-center md:mt-[80px]">
+    <div
+        class="w-full h-[60%] md:h-[410px] flex justify-between overflow-x-hidden md:flex md:items-center md:justify-center mt-[40px] md:mt-[100px]"
+    >
+    <div 
+        class="flex w-full md:h-full overflow-scroll [&>div]:flex-shrink-0"
+    >
+    <!-- this is where the fetching will take place! -->
+    { products.map((template) => (
+        <div
+            class="w-[400px] md:w-[30%] h-[400px] md:h-[400px] glasscard rounded-tr-[200px] rounded-tl-[200px] rounded-br-[20px] rounded-bl-[20px] mt-[10px] md:mt-0 ml-[20px] md:ml-[30px]"
+        >
+            <div 
+                class="w-[90%] h-[250px] bg-gray-600 rounded-tr-[200px] rounded-tl-[200px] ml-[20px] mt-[20px] flex items-center justify-center"
+            >
+                <img src={template.image} alt="money sign" class="w-[250px] h-[250px]" />
+            
+            </div>
 
-    <div class="w-[400px] md:w-[30%] h-[300px] md:h-[400px] glasscard rounded-tr-[200px] rounded-tl-[200px] rounded-br-[20px] rounded-bl-[20px]">
-        <div class="w-[90%] h-[250px] bg-gray-600 rounded-tr-[200px] rounded-tl-[200px] ml-[20px] mt-[20px] flex items-center justify-center">
-            <Image src={webimage4} alt="money sign" class="w-[250px] h-[250px]" >
-            <!-- image here -->
-            </>
-        </div>
-        <h1 class="text-left ml-[20px] mt-[10px] text-[28px] font-bold text-white">X Assistant</h1>
-        <div class="flex items-center justify-center mt-[10px]">
-            <div class="w-[75%] h-[60px]">
-                <p class="text-left ml-[10px] mt-[5px] text-[14px] w-[80%] font-normal text-white">X Assistant Wil help you get trough your busy day in X or twitter.</p>
-            </div>
-            <div class="w-[25%] h-[60px] ml-[-30px] flex items-center justify-center">
-                <Image src={icon1} alt="money sign" class="w-[30px] h-[30px] "/>
-                <h2 class="text-[17px] ml-[0px] font-normal text-white">5.99</h2>
-            </div>
-        </div>
+            <h1 class="text-left ml-[20px] mt-[10px] md:mt-[5px] text-[28px] font-bold text-white">{template.title}</h1>
 
-    </div>
+                <div 
+                    class="flex items-center justify-center mt-[10px]"
+                >
+                    <div
+                        class="w-[75%] h-[60px]"
+                    >
+                        <p class="text-left ml-[10px] mt-[-10px] md:mt-[-10px] text-[13px] w-[80%] font-normal text-white">{template.description}</p>
+                    </div>
+                        <div 
+                            class="w-[25%] h-[60px] ml-[-30px] flex items-center justify-center"
+                        >
+                            <Image src={icon1} alt="money sign" class="w-[30px] h-[30px] "/>
+                        <h2 class="text-[17px] ml-[0px] font-normal text-white">{template.price}</h2>
 
-
-    <div class="w-[400px] md:w-[30%] h-[400px] glasscard rounded-tr-[200px] rounded-tl-[200px] rounded-br-[20px] rounded-bl-[20px] ml-[30px]">
-        <div class="w-[90%] h-[250px] bg-pink-300 rounded-tr-[200px] rounded-tl-[200px] ml-[20px] mt-[20px] flex items-center justify-center">
-            <Image src={webimage5} alt="money sign" class="w-[250px] h-[250px]" >
-            <!-- image here -->
-            </>
+                    </div>
+                </div>
         </div>
-        <h1 class="text-left ml-[20px] mt-[10px] text-[28px] font-bold text-white">Essay Master</h1>
-        <div class="flex items-center justify-center mt-[10px]">
-            <div class="w-[75%] h-[60px]">
-                <p class="text-left ml-[10px] mt-[5px] text-[14px] w-[80%] font-normal text-white">X Assistant Wil help you get trough your busy day in X or twitter.</p>
-            </div>
-            <div class="w-[25%] h-[60px] ml-[-30px] flex items-center justify-center">
-                <Image src={icon1} alt="money sign" class="w-[30px] h-[30px] "/>
-                <h2 class="text-[17px] ml-[0px] font-normal text-white">10.99</h1>
-            </div>
-        </div>
-    </div>
-    <div class="w-[400px] md:w-[30%] h-[400px] glasscard rounded-tr-[200px] rounded-tl-[200px] rounded-br-[20px] rounded-bl-[20px] ml-[30px]">
-        <div class="w-[90%] h-[250px] bg-blue-300 rounded-tr-[200px] rounded-tl-[200px] ml-[20px] mt-[20px] flex items-center justify-center">
-            <Image src={webimage6} alt="money sign" class="w-[250px] h-[250px]" >
-            <!-- image here -->
-            </>
-        </div>
-        <h1 class="text-left ml-[20px] mt-[10px] text-[28px] font-bold text-white">Muscle Coach</h1>
-        <div class="flex items-center justify-center mt-[10px]">
-            <div class="w-[75%] h-[60px]">
-                <p class="text-left ml-[10px] mt-[5px] text-[14px] w-[80%] font-normal text-white">X Assistant Wil help you get trough your busy day in X or twitter.</p>
-            </div>
-            <div class="w-[25%] h-[60px] ml-[-30px] flex items-center justify-center">
-                <Image src={icon1} alt="money sign" class="w-[30px] h-[30px] "/>
-                <h2 class="text-[17px] ml-[0px] font-normal text-white">5.99</h2>
-            </div>
-        </div>
-    </div>
-    </div>
+    ))}
 </div>
-
 
 <style>
 .glasscard {
@@ -83,13 +65,13 @@ import '@fontsource-variable/quicksand';
   backdrop-filter: blur(5px);
 }
 
-    h1 {
-       font-family: "Kanit", sans-serif;
-    }
+h1 {
+    font-family: "Kanit", sans-serif;
+}
 
-    p {
-        font-family: 'Quicksand Variable', sans-serif;
-    }
+p {
+    font-family: 'Quicksand Variable', sans-serif;
+}
     
 
 </style>

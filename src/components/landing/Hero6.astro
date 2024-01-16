@@ -4,27 +4,39 @@ import { Image } from 'astro:assets';
 import '@fontsource/kanit/600.css';
 import '@fontsource-variable/quicksand';
 ---
-<div class="w-full h-[600px] md:h-[470px] mt-[100px] md:mt-[150px] flex items-center justify-center ml-[45px] md:ml-0">
-<div class="w-[60%] h-full">
-    <h1 class="text-left ml-[50px] text-[38px] md:text-[55px] w-[80%] text-white font-bold">Easily find your Favorite AI's</h1>
-    <p class="text-left ml-[50px] text-[18px] font-normal w-[120%] md:w-[70%] mt-[20px]">
+<div
+    class="w-full h-[600px] md:h-[470px] mt-[0px] md:mt-[250px] flex items-center justify-center ml-[40px] md:ml-0"
+>
+    <div
+        class="w-[60%] h-full"
+    >
+        <h1 class="text-left ml-[50px] text-[38px] md:text-[55px] w-[80%] text-white font-bold">Easily find your Favorite AI's</h1>
+        <p class="text-left ml-[50px] text-[18px] font-normal w-[150%] md:w-[70%] mt-[30px]">
         Easily find you favorite AI's trough your AI Portal and you can even check our AI Library! Give it a check!
-    </p>
-    <p class="text-left ml-[50px] text-[18px] font-normal  w-[120%] md:w-[70%] mt-[20px]">
+        </p>
+        <p class="text-left ml-[50px] text-[18px] font-normal w-[150%] md:w-[70%] mt-[20px]">
         Easily find you favorite AI's trough your AI Portal and you can even check our AI Library! Give it a check!
-    </p>
-    <div class=" w-full md:w-[60%] h-[70px] ml-[50px] mt-[50px] flex items-center">
-        <button class="w-[170px] h-[60px] rounded-md bg-[#F2AFEF] text-black ">
+        </p>
+        <div 
+            class=" w-[130%] md:w-[60%] h-[70px] ml-[50px] mt-[50px] flex items-center"
+        >
+            <button class="w-[250px] md:w-[170px] h-[60px] rounded-md bg-[#C499F3] text-black ">
             View Library
-        </button>
-        <button class="w-[170px] h-[60px] ml-[30px] rounded-md border-2 border-[#F2AFEF] text-[#F2AFEF]">
+            </button>
+            <button class="w-[250px] md:w-[170px] h-[60px] ml-[30px] rounded-md border-2 border-[#C499F3] text-[#C499F3]">
             Shop AI
-        </button>
+            </button>
+        </div>
     </div>
-</div>
-<div class="w-[40%] h-full">
-    <Image src={webimage1} alt="cat in front of moon" class="w-full h-[35%] md:w-[90%] md:h-[90%]" />
-</div>
+    <div 
+        class="w-[40%] h-full"
+    >
+        <Image
+         src={webimage1}
+         alt="cat in front of moon" 
+         class="w-full h-[30%] md:w-[90%] md:h-[90%] mt-[30px] md:mt-0"
+        />
+    </div>
 </div>
 
 <style>

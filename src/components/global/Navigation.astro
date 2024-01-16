@@ -1,7 +1,7 @@
-
 ---
 import logo15 from "../../images/logo15.png"
 import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
 ---
 
 <nav class=" shadow mb-10 mt-[20px] ml-[35px] w-full md:ml-0">
@@ -19,24 +19,26 @@ import { Image } from 'astro:assets';
                 aria-label="toggle menu"
                 @click="isOpen = !isOpen"
                 >
-                <div class="h-6 w-6 bg-red-200"></div>
+                <div class="h-[50px] w-[50px] flex items-center justify-center ml-[10px]">
+                    <Icon name="pepicons-print:menu" class="text-white text-[30px]" />
+                </div>
                 </button>
             </div>
 
             <!-- menu if mobile is set to hidden -->
             <div :class="isOpen ? 'show' : 'hidden'" class="md:flex items-center mt-4">
-                <div class="flex flex-col mt-0 md:mt-[-15px] md:flex-row ml-6 md:ml-6">
-                    <a class="my-1 text-[16px] text-white font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">Home</a>
-                    <a class="my-1 text-[16px] text-white font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">Shop</a>
-                    <a class="my-1 text-[16px] text-white font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">About</a>
-                    <a class="my-1 text-[16px] text-white font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">Contact</a>
+                <div class="flex flex-col mt-[10px] md:mt-[-15px] md:flex-row ml-6 md:ml-6">
+                    <a class="my-3 text-[16px] text-white font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">Home</a>
+                    <a class="my-3 text-[16px] text-white font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">Shop</a>
+                    <a class="my-3 text-[16px] text-white font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">About</a>
+                    <a class="my-3 text-[16px] text-white font-medium hover:text-indigo-500 md:mx-4 md:my-0" href="#">Contact</a>
                 </div>
 
-                <div class="flex flex-col mt-0 md:mt-[-15px] md:flex-row ml-6 md:ml-[500px]">
-                    <button class="w-[120px] h-[35px] border-2 border-[#7360DF] rounded-full text-white text-[15px]">Try Free</button>
-                </div>
-                <div class="flex flex-col mt-0 md:mt-[-15px] md:flex-row ml-6 md:ml-[30px]">
-                    <button class="w-[120px] h-[35px] bg-[#7360DF] rounded-full text-white text-[15px] shadow-md shadow-[#7360DF]">Sign in</button>
+                <div class="invisible md:visible w-[40%] md:w-full flex items-center justify-center mt-[10px] md:mt-[-15px] md:flex-row ml-[20px] md:ml-[500px]">
+                    <button class=" w-[120px] h-[35px] border-2 border-[#7360DF] hover:border-[#F2AFEF] rounded-full text-white text-[15px]">Try Free</button>
+               
+                    
+                    <button class="w-[200px] md:w-[120px] h-[35px] bg-[#7360DF] hover:bg-[#F2AFEF] rounded-md md:rounded-full text-white text-[15px] shadow-md shadow-[#7360DF] hover:shadow-[#F2AFEF] ml-[-90px] md:ml-[15px]">Sign in</button>
                 </div>
 
             </div>
