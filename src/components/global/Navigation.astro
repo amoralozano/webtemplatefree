@@ -1,14 +1,16 @@
 ---
-import logo15 from "../../images/logo15.png"
-import { Image } from 'astro:assets';
+
 import { Icon } from 'astro-icon/components';
 ---
+
+<!-- This is the Navigation of the website, titles and Logo can be changed. -->
+<!--  This is a basic example of the Navigation Bar... Feel free to change or add anything to make it your way!-->
 
 <nav class=" shadow mb-10 mt-[20px] ml-[35px] w-full md:ml-0">
     <div x-data="{isOpen: false}" class="max-w-3xl mx-auto py-3 px-6 md:px-0 md:flex md:justify-between md:items-center">
         <div class="md:flex md:justify-between md:items-center">
             <div class="flex items-center">
-                <Image src={logo15} class="h-[50px] w-[50px] shadow rounded-full" alt="" />
+                <img src="https://i.imgur.com/c5HGrwR.png" class="h-[50px] w-[50px] shadow rounded-full" alt="" />
                 <a href="#" class="text-white text-[28px] hover:text-[#F2AFEF] ml-0 md:ml-[-200px] font-bold">Imagine AI</a>
             </div>
             <!-- mobile menu button -->

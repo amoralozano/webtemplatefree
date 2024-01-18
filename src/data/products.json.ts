@@ -1,3 +1,6 @@
+// Basic data template for items.
+// template can be copied for other data type
+
 export interface Template {
   title: string;
   description: string;
